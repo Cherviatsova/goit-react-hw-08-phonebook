@@ -1,7 +1,14 @@
-@import-normalize; /* bring in normalize.css styles */
+ *,
+ *::before,
+ *::after{
+   box-sizing: border-box;
+ }
 
 body {
-  margin: 0;
+ min-height: 100vh;
+ scroll-behavior: smooth;
+ text-rendering: optimizeSpeed;
+ line-height: 1.5;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,4 +19,28 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  min-width: 100%;
+  display: block;
+}
+
+ul{
+  padding: 0;
 }
